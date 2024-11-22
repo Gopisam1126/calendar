@@ -14,6 +14,11 @@
     --font-s-p: 1.8rem;
     --font-s-span: 1.4rem;
     --font-s-sm: 1rem;
+
+    /* font-families */
+
+    --font-fam-p: "Poppins", sans-serif;
+    --font-fam-s: "Itim", serif;
 }
 
 .current-date-c, .current-date {
@@ -41,6 +46,7 @@
 }
 .day-header {
     text-align: center;
+    font-family: var(--font-fam-s);
 }
 
 .calendar-day {
@@ -51,8 +57,14 @@
   background-color: var(--bg-main);
   border-radius: 5px;
   position: relative;
+  font-family: var(--font-fam-p);
 }
 
 .calendar-day.empty {
   background-color: transparent;
+}
+
+.highlight {
+    background: var(--highlight);
+    color: var(--hl-overlay);
 }

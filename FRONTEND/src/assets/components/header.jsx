@@ -64,7 +64,10 @@ function Header() {
 
                 {
                     daysInMonth.map((day, i) => (
-                        <div key={i} className="calendar-day">
+                        <div 
+                            key={i}
+                            className={`calendar-day ${day.toDateString() === new Date().toDateString() ? "highlight" : ""}`}
+                        >
                             <span>{day.getDate()}</span>
                         </div>
                     ))
