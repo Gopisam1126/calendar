@@ -1,0 +1,58 @@
+:root {
+
+    /* colors */
+
+    --bg-main: #373C45;
+    --highlight: #1C5D99;
+    --hl-overlay: #FDFDFD;
+    --primary-c: #BEBFC1;
+
+    /* font-sizes */
+
+    --font-s-h1: 3.5rem;
+    --font-s-h2: 2.5rem;
+    --font-s-p: 1.8rem;
+    --font-s-span: 1.4rem;
+    --font-s-sm: 1rem;
+}
+
+.current-date-c, .current-date {
+    display: flex;
+    align-items: center;
+}
+.current-date-c {
+    gap: 3rem;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 0.8rem;
+    box-shadow: 0 1.5rem 1.5rem 1.5rem #2d313845;
+}
+.current-date {
+    gap: 0.8rem;
+}
+
+/* Calendar */
+
+.calendar-grid {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5rem;
+}
+.day-header {
+    text-align: center;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--bg-main);
+  border-radius: 5px;
+  position: relative;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+}
